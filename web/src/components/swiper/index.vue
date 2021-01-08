@@ -1,7 +1,7 @@
 <template>
   <div>
     <swiper class="swiper" :options="swiperOption">
-      <swiper-slide><car-list></car-list></swiper-slide>
+      <swiper-slide><car-list height="800px"></car-list></swiper-slide>
       <swiper-slide><car-list></car-list></swiper-slide>
       <swiper-slide><car-list></car-list></swiper-slide>
       <swiper-slide><car-list></car-list></swiper-slide>
@@ -34,7 +34,7 @@ export default {
       swiperOption: {
         // 显示个数
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 50,
         pagination: {
           el: ".swiper-pagination",
           clickable: true
@@ -80,5 +80,8 @@ export default {
 }
 .swiper-right-btn {
   right: 54px;
+}
+.swiper {
+  overflow: initial;
 }
 </style>

@@ -7,7 +7,7 @@
 // 导入swiper插件
 import Swiper from "@c/swiper/index";
 export default {
-  name: "cars",
+  name: "Cars",
   components: {
     Swiper
   },

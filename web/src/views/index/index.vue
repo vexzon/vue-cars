@@ -5,7 +5,7 @@
     <!-- 地图 -->
     <a-map></a-map>
     <!-- cars data 渲染 -->
-    <cars></cars>
+    <!-- <cars></cars> -->
 
     <!-- 会员 -->
     <div class="user-members" :class="{ open: show }">
@@ -15,13 +15,13 @@
 </template>
 <script>
 import AMap from "../amap/amap";
-import Cars from "../cars/cars";
+// import Cars from "../cars/cars";
 import NavBar from "@c/navbar/navBar";
 export default {
   name: "index",
   components: {
     AMap,
-    Cars,
+    // Cars,
     NavBar
   },
   data() {
