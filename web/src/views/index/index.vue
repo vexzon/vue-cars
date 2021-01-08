@@ -30,7 +30,8 @@ export default {
   computed: {
     show() {
       const router = this.$route;
-      return router.name === "Index" ? false : true;
+      console.log(router);
+      return router.name === "index" ? false : true;
     }
   },
   watch: {}

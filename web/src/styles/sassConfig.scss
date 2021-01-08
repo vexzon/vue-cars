@@ -1,1 +1,15 @@
 $color-main: #34393f;
+$color-blur: #00a3ff;
+// 清除浮动
+// clearfix
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+  }
+  *height: 1%;
+}

@@ -1,11 +1,16 @@
 <template>
   <div class="cars-wrap">
-    <span @click="user">汽车列表</span>
+    <div class="cars-swiper-wrap"><swiper></swiper></div>
   </div>
 </template>
 <script>
+// 导入swiper插件
+import Swiper from "@c/swiper/index";
 export default {
-  name: "Cars",
+  name: "cars",
+  components: {
+    Swiper
+  },
   data() {
     return {};
   },
@@ -16,11 +21,16 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
 .cars-wrap {
   position: fixed;
   left: 0;
-  top: 0;
-  z-index: 100;
+  right: 0;
+  bottom: 94px;
+  z-index: 11;
+}
+.cars-swiper-wrap {
+  padding: 0 155px;
 }
 </style>

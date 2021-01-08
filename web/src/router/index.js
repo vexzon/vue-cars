@@ -12,12 +12,12 @@ const routes = [
   // },
   {
     path: "/",
-    name: "Index",
+    name: "index",
     component: Index,
     children: [
       {
         path: "/user",
-        name: "User",
+        name: "user",
         component: () => import("../views/user/user.vue")
       }
     ]
