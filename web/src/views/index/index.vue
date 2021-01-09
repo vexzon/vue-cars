@@ -8,7 +8,7 @@
     <!-- <cars></cars> -->
 
     <!-- 会员 -->
-    <div class="user-members" :class="{ open: show }">
+    <div id="user-members" :class="{ open: show }">
       <router-view />
     </div>
   </div>
@@ -27,10 +27,19 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    document.addEventListener("mouseup", e => {
+      const userContent = document.getElementById("user-members");
+      if (userContent && !userContent.contains(e.target)) {
+        this.$router.push({
+          name: "index"
+        });
+      }
+    });
+  },
   computed: {
     show() {
       const router = this.$route;
-      console.log(router);
       return router.name === "index" ? false : true;
     }
   },
@@ -38,7 +47,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.user-members {
+#user-members {
   position: fixed;
   top: 0;
   bottom: 0;

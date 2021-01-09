@@ -36,6 +36,8 @@ export default {
 }
 
 .icon {
+  width: 44px;
+  height: 44px;
   vertical-align: middle;
   margin: 0 20px;
   cursor: pointer;
